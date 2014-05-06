@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TableLayout
+        android:id="@+id/opOutputTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:background="@color/black"
+        android:stretchColumns="0,1,2" >
+        	
+        <TableRow>            
+             <TextView
+            	android:id="@+id/textGrossWeightLable"
+            	android:layout_width="wrap_content"            	            
+            	android:layout_height="wrap_content"
+            	android:layout_weight="2" 
+            	android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"                          
+            	android:text="@string/gross_weight_lable"            	
+            	android:textColor="@color/gold"
+            	android:textSize="@dimen/lable_text_size" />
+            
+             <TextView
+            	android:id="@+id/textTareLable"
+            	android:layout_width="wrap_content"
+            	android:layout_weight="1"             	
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:freezesText="true"            	
+            	android:text="@string/tare_lable"            	
+            	android:textColor="@color/mintcream"
+            	android:textSize="@dimen/lable_text_size" />                    
+        </TableRow>           
+
+        <TableRow>			
+            <TextView
+            	android:id="@+id/textGrossWeightDisplay"     
+            	android:layout_width="wrap_content"
+            	android:layout_weight="2" 
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"             
+            	android:text=""            	
+            	android:textColor="@color/lightyellow"
+            	android:textSize="@dimen/info_text_size" />
+            <TextView
+           		android:id="@+id/textTareDisplay"
+           		android:layout_width="wrap_content"
+            	android:layout_weight="1"             	
+            	android:layout_height="wrap_content"           	
+            	android:text=""            
+            	android:textColor="@color/red"
+            	android:textSize="@dimen/info_text_size" />            
+      
+        </TableRow>
+        
+        <TableRow>            
+             <TextView
+            	android:id="@+id/textNetWeightLable"
+            	android:layout_width="wrap_content"
+            	android:layout_weight="2"            	
+            	android:layout_height="wrap_content" 
+            	android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:freezesText="true"           	
+            	android:text="@string/net_weight_lable"            	
+            	android:textColor="@color/gold"
+            	android:textSize="@dimen/lable_text_size" />
+            
+             <TextView
+            	android:id="@+id/textBMILable"
+            	android:layout_width="wrap_content"
+            	android:layout_weight="1"             	
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:freezesText="true"            	
+            	android:text="@string/body_mass_index_lable"            	
+            	android:textColor="@color/mintcream"
+            	android:textSize="@dimen/lable_text_size" />                    
+        </TableRow>           
+
+        <TableRow>			
+            <TextView
+            	android:id="@+id/textNetWeightDisplay"     
+            	android:layout_width="wrap_content"
+            	android:layout_weight="2" 
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"             
+            	android:text=""            	
+            	android:textColor="@color/lightyellow"
+            	android:textSize="@dimen/info_text_size" />
+            <TextView
+           		android:id="@+id/textBMIDisplay"
+           		android:layout_width="wrap_content"
+            	android:layout_weight="1"             	
+            	android:layout_height="wrap_content"           	
+            	android:text=""            
+            	android:textColor="@color/red"
+            	android:textSize="@dimen/info_text_size" />            
+      
+        </TableRow>
+        
+      
+        <TableRow>            
+
+            <Button
+                android:id="@+id/buttonDisonnectBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="BtnDisconnectHandler"
+                android:text="Disconnect"
+                android:textColor="@color/blue"
+                android:visibility="invisible" />
+            
+            <Button
+            	android:id="@+id/buttonGetScaleData"
+            	android:layout_width="wrap_content"            	      
+            	android:layout_height="wrap_content"            	            
+            	android:onClick="BtnGetScaleDataHandler"
+            	android:text="@string/update_info_button"
+            	android:textColor="@color/blue" />                  	                  
+                                
+        </TableRow>   
+    </TableLayout>
+
+</LinearLayout>
